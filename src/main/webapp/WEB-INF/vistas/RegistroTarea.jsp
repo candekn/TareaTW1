@@ -17,6 +17,9 @@
 	<h1 style="text-align:center">Registrar Usuario</h1>
 		<div id="login-box" class="mainbox col-md-6 col-md-offset-3">
 			<form:form action="validarRegistro" method="POST" modelAttribute="usuario">	
+				<label>Ingrese nombre:</label>
+				<form:input path="nombre" id="nombre" type="text" class="form-control" />
+				<hr>
 				<label>Ingrese E-mail:</label>
 				<form:input path="email" id="email" type="email" class="form-control" />
 				<hr>
@@ -32,7 +35,13 @@
 	    		<hr>
 	    		<button type="submit" class="form-control">Registrar</button>
 	    		<button type="reset" class="form-control">Reiniciar</button>
+	    		<hr>
+	    		<label>Buscar nombres de usuarios que empieza con "J": </label>
+	  
 			</form:form>
+		
+	   	<button class="form-control" role="link" onclick="window.location='/proyecto-limpio-spring/MuestroDatosBD'">Buscar</button>		
+	  		
 		</div>
 </div>		
 <div class="footer" style="text-align:center; padding:15px">Taller Web I - Delgado, Karlen, Aguayo</div>

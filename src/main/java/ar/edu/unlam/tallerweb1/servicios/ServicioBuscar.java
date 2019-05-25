@@ -1,7 +1,10 @@
 package ar.edu.unlam.tallerweb1.servicios;
 
+import java.util.List;
+
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 
-public interface ServicioRegistro {
-	void guardarUsuario(Usuario usuario);
+public interface ServicioBuscar {
+	List<Usuario> buscarDatos();
+
 }
